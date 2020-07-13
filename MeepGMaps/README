@@ -1,0 +1,14 @@
+Te detallo la prueba de código a continuación. 
+
+curl -X GET "https://apidev.meep.me/tripplan/api/v1/routers/lisboa/resources?lowerLeftLatLon=38.711046,-9.160096&upperRightLatLon=38.739429,-9.137115" -H "accept: application/json"
+
+Para darte un poco de contexto, esta llamada sirve para obtener los recursos (moto, bicis, paradas de bus, metro, ...) disponibles dado un "marco" (lowerLeftLatLon=38.711046,-9.160096&upperRightLatLon=38.739429,-9.137115) y una zona (lisboa). Puedes utilizar la llamada directamente. La idea es que una vez realizada la llamada, seas capaz de pintar sobre el mapa los diferentes recursos utilizando la librería de Google Maps.
+
+¿Qué nos gustaría ver?
+ - Swift
+ - Arquitectura
+ - Llamada al endpoint
+ - Pintar markers sobre el mapa con la librería de Google Maps por defecto. Identificar los diferentes recursos por color según el companyZoneId
+ - Detalle por defecto al pulsar sobre un marker
+ - Extra: si el usuario se mueve por el mapa, refrescar los puntos
+
