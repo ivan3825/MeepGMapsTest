@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08157CEA24B53396005CEEB5 /* ResourceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08157CE924B53396005CEEB5 /* ResourceModels.swift */; };
+		0815B29C24B689BA00BDE01B /* ResourceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0815B29B24B689BA00BDE01B /* ResourceMarker.swift */; };
+		0815B29F24B6995200BDE01B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0815B29E24B6995100BDE01B /* Constants.swift */; };
+		08C2C66A24B5292F0032EAC6 /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C2C66924B5292F0032EAC6 /* MapInteractor.swift */; };
+		08C2C66C24B529410032EAC6 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C2C66B24B529410032EAC6 /* MapPresenter.swift */; };
+		08C2C67024B529D80032EAC6 /* MeepAPIWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C2C66F24B529D80032EAC6 /* MeepAPIWorker.swift */; };
+		08C2C67324B52A420032EAC6 /* MapModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C2C67224B52A420032EAC6 /* MapModels.swift */; };
+		08EC277024B7EAEA00FC2D91 /* UIColor+random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EC276F24B7EAEA00FC2D91 /* UIColor+random.swift */; };
+		08F2DABC24B524E700E57DFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F2DABB24B524E700E57DFB /* AppDelegate.swift */; };
+		08F2DABE24B524E700E57DFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F2DABD24B524E700E57DFB /* SceneDelegate.swift */; };
+		08F2DAC324B524E700E57DFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08F2DAC124B524E700E57DFB /* Main.storyboard */; };
+		08F2DAC524B524E900E57DFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08F2DAC424B524E900E57DFB /* Assets.xcassets */; };
+		08F2DAC824B524E900E57DFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08F2DAC624B524E900E57DFB /* LaunchScreen.storyboard */; };
+		08F2DAD124B528FC00E57DFB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F2DAD024B528FC00E57DFB /* MapViewController.swift */; };
+		396420D2D276312CA2D36C18 /* Pods_MeepGMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88F41C0225CD729DF337EF8 /* Pods_MeepGMaps.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08157CE924B53396005CEEB5 /* ResourceModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceModels.swift; sourceTree = "<group>"; };
+		0815B29B24B689BA00BDE01B /* ResourceMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceMarker.swift; sourceTree = "<group>"; };
+		0815B29E24B6995100BDE01B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		08C2C66924B5292F0032EAC6 /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
+		08C2C66B24B529410032EAC6 /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		08C2C66F24B529D80032EAC6 /* MeepAPIWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MeepAPIWorker.swift; path = MeepGMaps/Workers/Network/MeepAPIWorker.swift; sourceTree = SOURCE_ROOT; };
+		08C2C67224B52A420032EAC6 /* MapModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModels.swift; sourceTree = "<group>"; };
+		08EC276F24B7EAEA00FC2D91 /* UIColor+random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+random.swift"; sourceTree = "<group>"; };
+		08F2DAB824B524E700E57DFB /* MeepGMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeepGMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08F2DABB24B524E700E57DFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		08F2DABD24B524E700E57DFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		08F2DAC224B524E700E57DFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08F2DAC424B524E900E57DFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08F2DAC724B524E900E57DFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		08F2DAC924B524E900E57DFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08F2DAD024B528FC00E57DFB /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		D7F8B23D615EF468964EFE2D /* Pods-MeepGMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeepGMaps.release.xcconfig"; path = "Target Support Files/Pods-MeepGMaps/Pods-MeepGMaps.release.xcconfig"; sourceTree = "<group>"; };
+		F49FAF69FF3FBB6533EFCF9E /* Pods-MeepGMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeepGMaps.debug.xcconfig"; path = "Target Support Files/Pods-MeepGMaps/Pods-MeepGMaps.debug.xcconfig"; sourceTree = "<group>"; };
+		F88F41C0225CD729DF337EF8 /* Pods_MeepGMaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeepGMaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08F2DAB524B524E700E57DFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				396420D2D276312CA2D36C18 /* Pods_MeepGMaps.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03E8235B5CFE528ABF698139 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F49FAF69FF3FBB6533EFCF9E /* Pods-MeepGMaps.debug.xcconfig */,
+				D7F8B23D615EF468964EFE2D /* Pods-MeepGMaps.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		08157CE824B53350005CEEB5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				08C2C66F24B529D80032EAC6 /* MeepAPIWorker.swift */,
+				08157CE924B53396005CEEB5 /* ResourceModels.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0815B29924B6893B00BDE01B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				08EC276E24B7EADB00FC2D91 /* Extensions */,
+				0815B29D24B6994700BDE01B /* Constants */,
+				0815B29A24B6898D00BDE01B /* Resource Marker */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0815B29A24B6898D00BDE01B /* Resource Marker */ = {
+			isa = PBXGroup;
+			children = (
+				0815B29B24B689BA00BDE01B /* ResourceMarker.swift */,
+			);
+			path = "Resource Marker";
+			sourceTree = "<group>";
+		};
+		0815B29D24B6994700BDE01B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				0815B29E24B6995100BDE01B /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		08C2C66D24B5294B0032EAC6 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				08157CE824B53350005CEEB5 /* Network */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		08C2C66E24B529530032EAC6 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				08F2DACF24B528BF00E57DFB /* Map Scene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		08C2C67124B529EA0032EAC6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				08F2DAC124B524E700E57DFB /* Main.storyboard */,
+				08F2DAC624B524E900E57DFB /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		08EC276E24B7EADB00FC2D91 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				08EC276F24B7EAEA00FC2D91 /* UIColor+random.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		08F2DAAF24B524E700E57DFB = {
+			isa = PBXGroup;
+			children = (
+				08F2DABA24B524E700E57DFB /* MeepGMaps */,
+				08F2DAB924B524E700E57DFB /* Products */,
+				03E8235B5CFE528ABF698139 /* Pods */,
+				272CF7D0713929CFD7D8B219 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		08F2DAB924B524E700E57DFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08F2DAB824B524E700E57DFB /* MeepGMaps.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08F2DABA24B524E700E57DFB /* MeepGMaps */ = {
+			isa = PBXGroup;
+			children = (
+				0815B29924B6893B00BDE01B /* Utils */,
+				08F2DABB24B524E700E57DFB /* AppDelegate.swift */,
+				08F2DABD24B524E700E57DFB /* SceneDelegate.swift */,
+				08C2C67124B529EA0032EAC6 /* Storyboards */,
+				08C2C66E24B529530032EAC6 /* Scenes */,
+				08C2C66D24B5294B0032EAC6 /* Workers */,
+				08F2DAC424B524E900E57DFB /* Assets.xcassets */,
+				08F2DAC924B524E900E57DFB /* Info.plist */,
+			);
+			path = MeepGMaps;
+			sourceTree = "<group>";
+		};
+		08F2DACF24B528BF00E57DFB /* Map Scene */ = {
+			isa = PBXGroup;
+			children = (
+				08F2DAD024B528FC00E57DFB /* MapViewController.swift */,
+				08C2C66924B5292F0032EAC6 /* MapInteractor.swift */,
+				08C2C66B24B529410032EAC6 /* MapPresenter.swift */,
+				08C2C67224B52A420032EAC6 /* MapModels.swift */,
+			);
+			path = "Map Scene";
+			sourceTree = "<group>";
+		};
+		272CF7D0713929CFD7D8B219 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F88F41C0225CD729DF337EF8 /* Pods_MeepGMaps.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08F2DAB724B524E700E57DFB /* MeepGMaps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08F2DACC24B524E900E57DFB /* Build configuration list for PBXNativeTarget "MeepGMaps" */;
+			buildPhases = (
+				0D13812A5C4636FA2D71694E /* [CP] Check Pods Manifest.lock */,
+				08F2DAB424B524E700E57DFB /* Sources */,
+				08F2DAB524B524E700E57DFB /* Frameworks */,
+				08F2DAB624B524E700E57DFB /* Resources */,
+				AC73AD478C857D79C538102A /* [CP] Copy Pods Resources */,
+				F8994EAD59CCB6A6E4B11DD1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeepGMaps;
+			productName = MeepGMaps;
+			productReference = 08F2DAB824B524E700E57DFB /* MeepGMaps.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08F2DAB024B524E700E57DFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "IIT Developer";
+				TargetAttributes = {
+					08F2DAB724B524E700E57DFB = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 08F2DAB324B524E700E57DFB /* Build configuration list for PBXProject "MeepGMaps" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08F2DAAF24B524E700E57DFB;
+			productRefGroup = 08F2DAB924B524E700E57DFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08F2DAB724B524E700E57DFB /* MeepGMaps */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08F2DAB624B524E700E57DFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08F2DAC824B524E900E57DFB /* LaunchScreen.storyboard in Resources */,
+				08F2DAC524B524E900E57DFB /* Assets.xcassets in Resources */,
+				08F2DAC324B524E700E57DFB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D13812A5C4636FA2D71694E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeepGMaps-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC73AD478C857D79C538102A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeepGMaps/Pods-MeepGMaps-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeepGMaps/Pods-MeepGMaps-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeepGMaps/Pods-MeepGMaps-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8994EAD59CCB6A6E4B11DD1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeepGMaps/Pods-MeepGMaps-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeepGMaps/Pods-MeepGMaps-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeepGMaps/Pods-MeepGMaps-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08F2DAB424B524E700E57DFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08157CEA24B53396005CEEB5 /* ResourceModels.swift in Sources */,
+				08EC277024B7EAEA00FC2D91 /* UIColor+random.swift in Sources */,
+				08C2C67024B529D80032EAC6 /* MeepAPIWorker.swift in Sources */,
+				0815B29C24B689BA00BDE01B /* ResourceMarker.swift in Sources */,
+				08F2DABC24B524E700E57DFB /* AppDelegate.swift in Sources */,
+				08F2DABE24B524E700E57DFB /* SceneDelegate.swift in Sources */,
+				0815B29F24B6995200BDE01B /* Constants.swift in Sources */,
+				08C2C67324B52A420032EAC6 /* MapModels.swift in Sources */,
+				08C2C66A24B5292F0032EAC6 /* MapInteractor.swift in Sources */,
+				08F2DAD124B528FC00E57DFB /* MapViewController.swift in Sources */,
+				08C2C66C24B529410032EAC6 /* MapPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		08F2DAC124B524E700E57DFB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08F2DAC224B524E700E57DFB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		08F2DAC624B524E900E57DFB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08F2DAC724B524E900E57DFB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08F2DACA24B524E900E57DFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		08F2DACB24B524E900E57DFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08F2DACD24B524E900E57DFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F49FAF69FF3FBB6533EFCF9E /* Pods-MeepGMaps.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77Q4YRAX7Q;
+				INFOPLIST_FILE = MeepGMaps/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.IIT.MeepGMaps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		08F2DACE24B524E900E57DFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7F8B23D615EF468964EFE2D /* Pods-MeepGMaps.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77Q4YRAX7Q;
+				INFOPLIST_FILE = MeepGMaps/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.IIT.MeepGMaps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08F2DAB324B524E700E57DFB /* Build configuration list for PBXProject "MeepGMaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08F2DACA24B524E900E57DFB /* Debug */,
+				08F2DACB24B524E900E57DFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08F2DACC24B524E900E57DFB /* Build configuration list for PBXNativeTarget "MeepGMaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08F2DACD24B524E900E57DFB /* Debug */,
+				08F2DACE24B524E900E57DFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08F2DAB024B524E700E57DFB /* Project object */;
+}
